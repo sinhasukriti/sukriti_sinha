@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriya yoga</title>
+    <link rel="responsive" media="screen and(max-width=1170px) (min-width=300px)" href="phone.css">
+    <style>
+        /*css reset*/
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /*variable*/
+        :root {
+            --navbar-height: 59px;
+        }
+
+        /*navbar*/
+        #navbar {
+            display: flex;
+            position: relative;
+            top: 0px;
+            text-align: center;
+            position: sticky;
+        }
+
+        #logo {
+            margin: 12px 17px;
+        }
+
+        #logo img {
+            height: 57px;
+            margin: 12px 19px;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            display: flex;
+            list-style: none;
+        }
+
+        #navbar ul li a {
+            display: block;
+            padding: 19px 45px;
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+
+        }
+
+        #navbar ul li a:hover {
+            color: blanchedalmond;
+            background-color: black;
+        }
+
+        #navbar::before {
+            content: '';
+            background-color: rgb(5, 3, 3);
+            position: absolute;
+            height: 77%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.6;
+            top: 0px;
+            left: 0px;
+        }
+
+        /*home section*/
+        #home {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2px 10px;
+            height: 200px;
+        }
+
+        .h-primary {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+
+
+
+        }
+
+        .p-primary {
+            font-size: 20px;
+            font-family: monospace;
+            text-align: center;
+        }
+
+        #home::before {
+            content: '';
+            background: url('yogaimg/bg3.jpg') no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 1.4;
+            top: 0px;
+            left: 0px;
+        }
+
+        /*section*/
+        #home2 {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            padding: 100px 10px;
+            height: 1600px;
+            background-color: rgb(243, 215, 180);
+            margin-top: 380px;
+            opacity: 1.4;
+            z-index: -1;
+
+
+
+        }
+
+
+
+        #yoga {
+            margin: 35px;
+            display: flex;
+
+
+        }
+
+        #yoga .box {
+            margin-bottom: 20px;
+            margin: 2px 6px;
+            padding: 34px;
+            border: 2px solid burlywood;
+            border-radius: 10px;
+            background: rgb(233, 191, 176);
+
+
+
+        }
+
+        #yoga .box img {
+            display: block;
+            height: 156px;
+            margin: auto;
+
+
+        }
+
+
+
+
+        .h-secondary {
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        .p-secondary {
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        #home3 {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+
+            padding: 2px 10px;
+            height: 1600px;
+            background-color: rgb(243, 215, 180);
+            margin-top: -1000px;
+            opacity: 1.4;
+            z-index: -1;
+        }
+
+        .h-secondary1 {
+            text-align: center;
+            justify-content: center;
+            font-size: 30px;
+
+        }
+
+        .p-secondary1 {
+            text-align: center;
+            justify-content: center;
+            font-size: 20px;
+
+        }
+
+        #home4 {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid brown;
+
+            padding: 6px 85px;
+            height: 200px;
+            background-color: rgb(255, 255, 255);
+            margin-top: -1000px;
+            opacity: 1.4;
+            z-index: -1;
+        }
+
+        .btn {
+            color: cornsilk;
+            background-color: black;
+            cursor: pointer;
+            margin: 15px 6px;
+            padding: 15px;
+        }
+
+        #home5 {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+
+            padding: 2px 10px;
+
+            background-color: rgb(243, 215, 180);
+            margin-top: 150px;
+            opacity: 1.4;
+            z-index: -1;
+        }
+
+        footer {
+            background: black;
+            padding: 37px 20px;
+            color: white;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        #home6 {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+
+            padding: 2px 10px;
+
+            background-color: rgb(243, 215, 180);
+            margin-top: 75px;
+            opacity: 1.4;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="#Home">Home</a></li>
+            <li class="item"><a href="#About Us">About Us</a></li>
+            <li class="item"><a href="#Blog">Blog</a></li>
+            <li class="item"><a href="#Gallery">Gallery</a></li>
+            <li class="item"><a href="#Shop">Shop</a></li>
+        </ul>
+        <div id="logo">
+            <img src="yogaimg/logo-dark.png" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#Workshop">Workshop</a></li>
+            <li class="item"><a href="#Shortcodes">Shortcodes</a></li>
+            <li class="item"><a href="#Book Now">Book Now</a></li>
+            <li class="item"><a href="#Location">Location</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Your mind & soul is beautiful</h1>
+        <p class="p-primary">Witness the etheeral beauty with kriya</p>
+    </section>
+    <section id="home2">
+        <h1 class="h-primary">A BRIEF DESCRIPTION ABOUT THE WAYS OF YOGA
+        </h1>
+        <img src="yogaimg/floral-decor.png">
+        <p class="p-primary">We at KRIYA provide various services to the nature of the clients.</P>
+        <p class="p-primary"> we can talk and come to a conclusion.
+        </p>
+        <div id="yoga">
+            <div class="box">
+                <img src="yogaimg/circle-cropped.png" alt="this is an image">
+                <h2 class="h-secondary">ASTANGA YOGA</h2>
+                <p class="p-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, quibusdam fuga
+                    possimus nam ipsa iure ab. Sunt nam sint alias.</p>
+            </div>
+            <div class="box">
+                <img src="yogaimg/circle-cropped (1).png" alt="this is an image">
+                <h2 class="h-secondary">HATHA YOGA</h2>
+                <p class="p-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, quibusdam fuga
+                    possimus nam ipsa iure ab. Sunt nam sint alias.</p>
+            </div>
+            <div class="box">
+                <img src="yogaimg/circle-cropped (2).png" alt="this is an image">
+                <h2 class="h-secondary">
+                    KUNDALINI YOGA</h2>
+                <p class="p-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, quibusdam fuga
+                    possimus nam ipsa iure ab. Sunt nam sint alias.</p>
+            </div>
+            <div class="box">
+                <img src="yogaimg/immg4.png" alt="this is an image">
+                <h2 class="h-secondary">IYENGAR YOGA</h2>
+                <p class="p-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, quibusdam fuga
+                    possimus nam ipsa iure ab. Sunt nam sint alias.</p>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="home3">
+        <h2 class="h-secondary1">Our Events</h2>
+        <img src="yogaimg/ico-stones.png">
+        <p class="p-secondary1">We at KRIYA provide various services to the nature of the clients. </p>
+        <p class="p-secondary1"> we can talk and come to a conclusion.</p>
+        <div id="yoga">
+            <div class="box">
+                <img src="yogaimg/yannic-laderach-Dqx4XWuXu7w-unsplash.jpg" alt="this is an image">
+
+                <p class="p-secondary1"> SELFIE TIME FOR OUR TRAINEES</p>
+            </div>
+            <div class="box">
+                <img src="yogaimg/yoga5.jpg" alt="this is an image">
+
+                <p class="p-secondary1">Lets Unite the World for Awareness</p>
+            </div>
+            <div class="box">
+                <img src="yogaimg/gymnastics-1284656_1280.jpg" alt="this is an image">
+
+                <p class="p-secondary1">Flexible Gymnastic Young Trainess</p>
+            </div>
+        </div>
+    </section>
+    <section id="home4">
+        <h2 class="h-secondary1">Creative & most complete yoga / health theme</h2>
+        <br>
+        <p class="p-secondary1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+            tincidunt ut laoreet dolore. Phasellus viverra nulla
+            ut metus varius laoreet. Aenean the secrece is to fill most of the part with amazing fillers imperdiet.</p>
+        <button class="btn">Purchase</button>
+    </section>
+    <br>
+    <section id="home5">
+        <h2 class="h-secondary1">Our Special Team</h2>
+        <img src="yogaimg/ico-trainer.png">
+        <p class="p-secondary1">We at KRIYA provide various services to the nature of the clients. </p>
+        <p class="p-secondary1">we can talk and come to a conclusion.</p>
+        <div id="yoga">
+            <div class="box">
+                <h2 class="h-secondary1">CAMIELE JAMES</h2>
+                <img src="yogaimg/usse2.png" alt="this is an image">
+
+                <p class="p-secondary1"> Dolor expedita ducimus amet harum quasi earum eaque veniam officiis mollitia
+                    nulla.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="home6">
+        <p class="p-secondary">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+            pain was born and I will give you a complete account of the system, and expound the actual teachings of the
+            great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
+            pleasure itself, because it is pleasure."</p>
+    </section>
+    <footer>
+        <div class="center">
+            <img src="yogaimg/floral-decor.png">
+            <br>
+            copyright &copy;KRIYA © 2016. |All rights reserved|
+        </div>
+    </footer>
+
+</body>
+
+</html>
